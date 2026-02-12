@@ -26,7 +26,7 @@
     const clipRight = 100 - percent;
     beforeImg.style.clipPath = `inset(0 ${clipRight}% 0 0)`;
 
-    if (percent < 20) {
+    if (percent < 35) {
       labelBefore.classList.add('hidden');
     } else {
       labelBefore.classList.remove('hidden');
