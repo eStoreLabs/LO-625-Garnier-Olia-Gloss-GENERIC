@@ -499,6 +499,7 @@ $es-grey: #ececee;
         bottom: 10px;
         left: 10px;
         padding: 5px 15px;
+        margin-bottom: 0;
       }
 
       &__label {
@@ -582,7 +583,7 @@ $es-grey: #ececee;
 
       &__photoimg {
         display: block;
-        max-width: 145px;
+        max-width: 135px;
       }
     }
 
