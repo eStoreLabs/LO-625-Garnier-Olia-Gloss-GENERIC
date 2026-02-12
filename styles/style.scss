@@ -336,7 +336,7 @@ $es-grey: #ececee;
       &-product-img {
         position: absolute;
         display: block;
-        right: -100px;
+        right: -120px;
         bottom: 2%;
         height: 150px;
         min-width: 55px;
@@ -607,8 +607,8 @@ $es-grey: #ececee;
 
     .es-product-colors {
       &__single-title {
-        min-width: 170px;
-        font-size: 11px;
+        min-width: 202px;
+        font-size: 12px;
       }
     }
 
@@ -727,6 +727,17 @@ $es-grey: #ececee;
       &__container {
         column-gap: 0;
         border: 2px solid black;
+      }
+
+      &__single-group {
+        bottom: 5%;
+      }
+
+      &__single-product-img {
+        right: -116px;
+        bottom: -20px;
+        height: 156px;
+        min-width: 61px;
       }
 
       &__single {
