@@ -208,6 +208,115 @@ $es-grey: #ececee;
       row-gap: 30px;
     }
 
+    &__item-comparison {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      cursor: ew-resize;
+    }
+
+    .comparison-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .comparison-img--after {
+      position: relative;
+      max-height: 398px;
+      min-height: 398px;
+    }
+
+    .comparison-img--before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      clip-path: inset(0 50% 0 0);
+      max-height: 398px;
+      min-height: 398px;
+    }
+
+    .comparison-slider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      transform: translateX(-50%);
+      z-index: 10;
+      cursor: ew-resize;
+      background: transparent;
+    }
+
+    .comparison-slider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: calc(50% - 20px);
+      background: white;
+    }
+
+    .comparison-slider::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: calc(50% - 20px);
+      background: white;
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .slider-button::before,
+    .slider-button::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    .slider-button::before {
+      left: 4px;
+      transform: translateY(-50%);
+      border-width: 6px 8px 6px 0;
+      border-color: transparent #ffffff transparent transparent;
+    }
+
+    .slider-button::after {
+      right: 4px;
+      transform: translateY(-50%);
+      border-width: 6px 0 6px 8px;
+      border-color: transparent transparent transparent #ffffff;
+    }
+
+    &__item-label-inner {
+      transition: opacity 0.3s ease;
+    }
+
+    &__item-label-inner.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
     &__item {
       max-width: 330px;
       max-height: 398px;
