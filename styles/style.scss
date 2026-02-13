@@ -366,6 +366,8 @@ $es-grey: #ececee;
 
     &__item-label-group {
       position: absolute;
+      user-select: none;
+      pointer-events: none;
 
       &--before {
         top: 35%;

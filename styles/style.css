@@ -312,6 +312,10 @@
 }
 #es-rc.es-rc-content .es-benefits__item-label-group {
   position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 #es-rc.es-rc-content .es-benefits__item-label-group--before {
   top: 35%;
